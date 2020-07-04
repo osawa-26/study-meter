@@ -20,7 +20,7 @@ gem "date_validator"
 gem "valid_email2"
 gem "nokogiri"
 
-gem "bootstrap-sass", "~>3.3.6"
+gem "bootstrap-sass", ">= 3.4.1"
 gem "jquery-rails"
 gem "jquery-ui-rails"
 
