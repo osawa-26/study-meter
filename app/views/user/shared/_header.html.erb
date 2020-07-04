@@ -1,0 +1,10 @@
+<header>
+  <span class="logo-mark">study-meter</span>
+  <%=
+    if current_app_user
+      link_to "ログアウト", :user_session, method: :delete
+    else
+      link_to "ログイン", :user_login
+    end
+  %>
+</header>
