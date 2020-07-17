@@ -20,12 +20,24 @@ gem "date_validator"
 gem "valid_email2"
 gem "nokogiri"
 
-gem "bootstrap-sass", ">= 3.4.1"
+gem 'sassc'
+gem 'uglifier'
+gem 'bootstrap'
+
 gem "jquery-rails"
 gem "jquery-ui-rails"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
+  gem 'pry-rails'
+end
+
+group :production do
+  gem 'unicorn', '5.4.1'
 end
 
 group :development do

@@ -1,6 +1,6 @@
 @import "colors";
 @import "dimensions";
-@import "~bootstrap/scss/bootstrap";
+@import "bootstrap";
 
 html, body {
   margin: 0;
@@ -14,19 +14,16 @@ div#wrapper {
   margin: 0 auto;
   padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
   background-color: $floralwhite;
+
+  div.alert.alert-success div.alert.alert-danger {
+    padding: $narrow $moderate;
+    margin: 0 $moderate;
+    font-size: large;
+  }
 }
 header {
   padding: $moderate;
   background-color: $orange;
-  color: $dark_orange;
-  span.logo-mark {
-    font-weight: bolder;
-    color: $light_yellow
-  }
-  a {
-    float: right;
-    color: $light_yellow
-  }
 }
 footer {
   bottom: 0;

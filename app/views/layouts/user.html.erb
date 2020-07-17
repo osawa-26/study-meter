@@ -5,8 +5,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_pack_tag "user", media: "all", true: "all", "data-turbolinks-track": "true" %>
-    <%= javascript_pack_tag "user", "data-turbolinks-track": "true" %>
+    <%= stylesheet_link_tag "user", media: "all", true: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "user", media: "all", true: "all", "data-turbolinks-track": "reload " %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>

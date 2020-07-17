@@ -4,7 +4,7 @@ RSpec.describe AppUser, type: :model do
   describe "#password=" do
     example "文字列を与えると、hashed_passwordは長さ60の文字列になる" do
       appuser = AppUser.new
-      appuser.password = "baukis"
+      appuser.password = "studystudy"
       expect(appuser.hashed_password).to be_kind_of(String)
       expect(appuser.hashed_password.size).to eq(60)
     end

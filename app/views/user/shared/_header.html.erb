@@ -1,10 +1,46 @@
 <header>
-  <span class="logo-mark">study-meter</span>
-  <%=
-    if current_app_user
-      link_to "ログアウト", :user_session, method: :delete
-    else
-      link_to "ログイン", :user_login
-    end
-  %>
+  <nav class="navbar navbar-light">
+    <a href="/" class="navbar-brand">study-meter</a>
+    <button class="navbar-toggler" type="button"
+        data-toggle="collapse"
+        data-target="#navmenu1"
+        aria-controls="navmenu1"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu1">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link">
+          <%=
+            if current_app_user
+              link_to "ログアウト", :user_session, method: :delete
+            else
+              link_to "ログイン", :user_login
+            end
+          %>
+        </a>
+        <a class="nav-item nav-link">
+          <%=
+            link_to "アカウント", :user_account if current_app_user
+          %>
+        </a>
+        <a class="nav-item nav-link">
+          <%=
+            link_to "勉強時間", :user_root if current_app_user
+          %>
+        </a>
+        <a class="nav-item nav-link">
+          <%=
+            link_to "記録する", :new_user_record if current_app_user
+          %>
+        </a>
+        <a class="nav-item nav-link">
+          <%=
+            link_to "勉強の記録", :user_records if current_app_user
+          %>
+        </a>
+      </div>
+    </div>
+  </nav>
 </header>
