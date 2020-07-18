@@ -84,5 +84,6 @@ test:
 production:
   <<: *default
   database: study_meter_production
-  username: postgres
+  username: root
   password: <%= ENV['STUDY_METER_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
