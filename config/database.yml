@@ -86,5 +86,5 @@ production:
   encoding: utf8
   database: study_meter_production
   username: root
-  password: <%= ENV['STUDY_METER_DATABASE_PASSWORD'] %>
+  password: password
   socket: /var/lib/mysql/mysql.sock
