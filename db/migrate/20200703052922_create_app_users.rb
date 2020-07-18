@@ -19,7 +19,7 @@ class CreateAppUsers < ActiveRecord::Migration[6.0]
       t.timestamps
     end
 
-    add_index :app_users, LOWER('email'), unique: true
+#    add_index :app_users, LOWER('email'), unique: true
     add_index :app_users, [ :family_name_kana, :given_name_kana ]
   end
 end
