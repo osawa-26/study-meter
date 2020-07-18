@@ -38,6 +38,7 @@ end
 
 group :production do
   gem 'unicorn', '5.4.1'
+  gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 end
 
 group :development do
