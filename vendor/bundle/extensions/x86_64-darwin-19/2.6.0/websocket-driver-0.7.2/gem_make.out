@@ -1,0 +1,15 @@
+current directory: /Users/tomojiro/rails6-compose/apps/study-meter/vendor/bundle/gems/websocket-driver-0.7.2/ext/websocket-driver
+/Users/tomojiro/.rbenv/versions/2.6.4/bin/ruby -I /Users/tomojiro/.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20200719-8483-1i5kale.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tomojiro/rails6-compose/apps/study-meter/vendor/bundle/gems/websocket-driver-0.7.2/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/tomojiro/rails6-compose/apps/study-meter/vendor/bundle/gems/websocket-driver-0.7.2/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/tomojiro/rails6-compose/apps/study-meter/vendor/bundle/gems/websocket-driver-0.7.2/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20200719-8483-1cb937t

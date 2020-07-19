@@ -307,6 +307,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   bootstrap
   byebug
+  capistrano
   capistrano-bundler
   capistrano-rails
   capistrano-rbenv
