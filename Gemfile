@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.6.4"
 
 gem "rails", "~> 6.0.0"
-# gem "pg", ">= 0.18", "< 2.0"
+gem "pg", ">= 0.18", "< 2.0"
 gem "puma", "~> 3.11"
 gem "sass-rails", "~> 5"
 gem "webpacker", "~> 4.0"
@@ -38,7 +38,7 @@ end
 
 group :production do
   gem 'unicorn', '5.4.1'
-  gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+  # gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 end
 
 group :development do
