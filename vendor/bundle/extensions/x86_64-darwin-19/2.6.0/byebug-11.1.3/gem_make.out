@@ -1,0 +1,19 @@
+current directory: /Users/tomojiro/rails6-compose/apps/study-meter/vendor/bundle/gems/byebug-11.1.3/ext/byebug
+/Users/tomojiro/.rbenv/versions/2.6.4/bin/ruby -I /Users/tomojiro/.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20200719-8483-7mna82.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tomojiro/rails6-compose/apps/study-meter/vendor/bundle/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/tomojiro/rails6-compose/apps/study-meter/vendor/bundle/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/tomojiro/rails6-compose/apps/study-meter/vendor/bundle/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20200719-8483-rovcz6/byebug
