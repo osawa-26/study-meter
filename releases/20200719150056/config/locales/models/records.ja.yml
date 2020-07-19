@@ -1,0 +1,14 @@
+ja:
+  activerecord:
+    attributes:
+      record:
+        material: 教材
+        study_date: 日付
+        study_hour: 時間
+        study_minute: 分
+        memo: メモ
+
+    errors:
+      models:
+        record:
+          attributes:

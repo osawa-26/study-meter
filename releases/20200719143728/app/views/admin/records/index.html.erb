@@ -1,0 +1,56 @@
+<div class="center jumbotron" style="background-color:  white;">
+  <div class="text-center">
+    <h1>勉強の記録</h1>
+  </div>
+
+<table class="table ">
+  <tbody>
+<% @records.each do |record| %>
+
+    <tr>
+      <td>
+          <div>
+            <span>日付 <%= record.study_date.strftime("%Y年%m月%d日") %></span>
+          </div>
+
+          <div>
+            <span>教材 <%= record.material %></span>
+          </div>
+
+        　<div>
+            <p class="mb-0">
+                <%= record.memo %>
+            </p>
+        　</div>
+
+        <div class="row">
+
+          <div>
+              <%= link_to "編集", [ :edit, :admin, record ], class: 'btn btn-success btn-sm' %>
+          </div>
+
+          <div class="ml-sm-1">
+              <%= link_to "削除", [ :admin, record ], method: :delete,
+                data: { confirm: "本当に削除しますか？" }, class: 'btn btn-danger btn-sm' %>
+          </div>
+
+          <div class="ml-auto">
+            <% if record.total_study_time >= 60 %>
+             <span><font size="6" color="#FF570D"><%= record.total_study_time / 60 %></font></span>
+             <span><font size="3">時間</font></span>
+             <span><font size="6" color="#FF570D"><%= record.total_study_time % 60 %></font></span>
+             <span><font size="3">分</font></span>
+            <% else %>
+             <span><font size="6" color="#FF570D"><%= record.total_study_time %></font></span>
+             <span><font size="3">分</font></span>
+            <% end %>
+          </div>
+
+        </div>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+  <%= paginate @records %>
+</div>

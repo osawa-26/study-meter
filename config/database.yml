@@ -86,5 +86,7 @@ test:
 production:
   <<: *default
   database: study_meter_production
-  username: postgres
-  password: <%= ENV['STUDY_METER_DATABASE_PASSWORD'] %>
+#  username: postgres
+#  password: password
+  username: user
+  password: password

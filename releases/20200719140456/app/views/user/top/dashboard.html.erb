@@ -1,0 +1,75 @@
+<div class="center jumbotron" style="background-color:  white;">
+  <div class="text-center">
+    <h2>こんにちは、<%= current_app_user.nickname %>さん</h2>
+    <div class="my-4"><h3>今までの勉強時間</h3></div>
+  </div>
+
+<div class="row">
+  <div class="col-sm-8 offset-sm-2">
+
+  <table class="table" style="text-align: center;">
+    <thead>
+      <tr>
+        <th>今日</th>
+        <th>今週</th>
+        <th>今月</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          <% if @today_total_time >= 60 %>
+            <span><font size="6" color="#FF570D"><%= @today_total_time / 60 %></font></span>
+            <span><font size="3">時間</font></span>
+            <span><font size="6" color="#FF570D"><%= @today_total_time % 60 %></font></span>
+            <span><font size="3">分</font></span>
+          <% else %>
+            <span><font size="6" color="#FF570D"><%= @today_total_time %></font></span>
+            <span><font size="3">分</font></span>
+          <% end %>
+        </td>
+        <td>
+          <% if @this_week_total_time >= 60 %>
+            <span><font size="6" color="#FF570D"><%= @this_week_total_time / 60 %></font></span>
+            <span><font size="3">時間</font></span>
+            <span><font size="6" color="#FF570D"><%= @this_week_total_time % 60 %></font></span>
+            <span><font size="3">分</font></span>
+          <% else %>
+            <span><font size="6" color="#FF570D"><%= @this_week_total_time %></font></span>
+            <span><font size="3">分</font></span>
+          <% end %>
+        </td>
+        <td>
+          <% if @this_month_total_time >= 60 %>
+            <span><font size="6" color="#FF570D"><%= @this_month_total_time / 60 %></font></span>
+            <span><font size="3">時間</font></span>
+            <span><font size="6" color="#FF570D"><%= @this_month_total_time % 60 %></font></span>
+            <span><font size="3">分</font></span>
+          <% else %>
+            <span><font size="6" color="#FF570D"><%= @this_month_total_time %></font></span>
+            <span><font size="3">分</font></span>
+          <% end %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+
+
+  <div class="text-center">
+    <h3>合計勉強時間</h3>
+    <div>
+     <% if @total_time >= 60 %>
+       <span><font size="7" color="#FF570D"><%= @total_time / 60 %></font></span>
+       <span><font size="4">時間</font></span>
+       <span><font size="7" color="#FF570D"><%= @total_time % 60 %></font></span>
+       <span><font size="4">分</font></span>
+     <% else %>
+       <span><font size="7" color="#FF570D"><%= @total_time %></font></span>
+       <span><font size="4">分</font></span>
+      <% end %>
+    </div>
+  </div>
+</div>
