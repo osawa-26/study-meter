@@ -5,7 +5,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 set :rbenv_type, :user
 set :rbenv_ruby, '2.6.4'
 set :ssh_options, auth_methods: ['publickey'], keys: ['~/.ssh/my-key.pem']
-set :unicorn_pid, -> { "/var/www/study-meter/shared/tmp/pids/unicorn.pid" }
+set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
 set :linked_files, fetch(:linked_files, []).push("config/master.key")
