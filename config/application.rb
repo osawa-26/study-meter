@@ -7,6 +7,7 @@ Bundler.require(*Rails.groups)
 module StudyMeter
   class Application < Rails::Application
     config.load_defaults 6.0
+    config.web_console.development_only = true
 
     config.time_zone = "Tokyo"
     config.i18n.load_path +=
