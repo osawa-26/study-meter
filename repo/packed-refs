@@ -1,7 +1,5 @@
 # pack-refs with: peeled fully-peeled 
-c40e99a18e6b932c2f09d592165904293b249d5b refs/heads/dependabot/npm_and_yarn/lodash-4.17.19
 d22d9a96f79d7720028801e9875b6d534f830e65 refs/heads/master
 90a3df57345b8c64abb406e14be3914706dccc40 refs/heads/rm_packs_application_js
 55f404a2d1f7c5669798b761c180050b276d6e9b refs/pull/1/head
 c40e99a18e6b932c2f09d592165904293b249d5b refs/pull/2/head
-b7152edc2095782bbc5eb2d220d709289bfed563 refs/pull/2/merge
