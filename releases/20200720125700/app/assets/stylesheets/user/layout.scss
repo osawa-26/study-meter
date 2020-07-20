@@ -1,0 +1,39 @@
+@import "colors";
+@import "dimensions";
+@import "bootstrap";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+div#wrapper {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
+  background-color: $floralwhite;
+
+  div.alert.alert-success div.alert.alert-danger {
+    padding: $narrow $moderate;
+    margin: 0 $moderate;
+    font-size: large;
+  }
+}
+header {
+  padding: $moderate;
+  background-color: $orange;
+}
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: $dark_red;
+  color: $light_gray;
+  p {
+    text-align: center;
+    padding: $moderate;
+    margin: 0;
+  }
+}
