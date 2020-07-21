@@ -122,3 +122,31 @@ D, [2020-07-20T15:09:52.260264 #8330] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[
 D, [2020-07-20T15:09:52.273138 #8330] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 D, [2020-07-20T15:09:52.278810 #8330] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
 D, [2020-07-20T15:09:52.284002 #8330] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1444304769709894365)[0m
+D, [2020-07-20T16:49:31.636617 #6061] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1444304769709894365)[0m
+D, [2020-07-20T16:49:31.672007 #6061] DEBUG -- :   [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-07-20T16:49:31.683653 #6061] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (5.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-07-20T16:49:31.688785 #6061] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1444304769709894365)[0m
+D, [2020-07-21T05:06:52.229272 #10055] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1444304769709894365)[0m
+D, [2020-07-21T05:06:52.241861 #10055] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-07-21T05:06:52.248056 #10055] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-07-21T05:06:52.253236 #10055] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1444304769709894365)[0m
+D, [2020-07-21T05:12:05.441311 #11327] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1444304769709894365)[0m
+D, [2020-07-21T05:12:05.466183 #11327] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-07-21T05:12:05.478494 #11327] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-07-21T05:12:05.483621 #11327] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1444304769709894365)[0m
+D, [2020-07-21T05:24:58.756698 #12571] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1444304769709894365)[0m
+D, [2020-07-21T05:24:58.762756 #12571] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-07-21T05:24:58.765946 #12571] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-07-21T05:24:58.771101 #12571] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1444304769709894365)[0m
+D, [2020-07-21T06:50:06.310378 #15575] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1444304769709894365)[0m
+D, [2020-07-21T06:50:06.323821 #15575] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-07-21T06:50:06.329468 #15575] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-07-21T06:50:06.338784 #15575] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1444304769709894365)[0m
+D, [2020-07-21T07:05:54.569993 #18822] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1444304769709894365)[0m
+D, [2020-07-21T07:05:54.584605 #18822] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-07-21T07:05:54.590850 #18822] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-07-21T07:05:54.595934 #18822] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1444304769709894365)[0m
+D, [2020-07-21T09:34:39.566500 #20561] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1444304769709894365)[0m
+D, [2020-07-21T09:34:39.581003 #20561] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-07-21T09:34:39.588500 #20561] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-07-21T09:34:39.593518 #20561] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1444304769709894365)[0m
