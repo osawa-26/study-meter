@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   config = Rails.application.config.study_meter
 
-  constraints host: config[:user][:host] do
-    namespace :user, path: config[:user][:path] do
+  constraints host: "3.90.238.250" do
+    namespace :user, path: "" do
       root "toppages#index"
       get "login" => "sessions#new", as: :login
       # delete "records" => "records#destroy"
@@ -14,8 +14,8 @@ Rails.application.routes.draw do
     end
   end
 
-  constraints host: config[:admin][:host] do
-    namespace :admin, path: config[:admin][:path] do
+  constraints host: "3.90.238.250" do
+    namespace :admin, path: "admin" do
       root "top#index"
       get "login" => "sessions#new", as: :login
       resource :session, only: [ :create, :destroy ]
