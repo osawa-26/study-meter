@@ -23,3 +23,4 @@ class CreateAppUsers < ActiveRecord::Migration[6.0]
     add_index :app_users, [ :family_name_kana, :given_name_kana ]
   end
 end
+

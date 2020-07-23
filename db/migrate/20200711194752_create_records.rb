@@ -15,3 +15,4 @@ class CreateRecords < ActiveRecord::Migration[6.0]
     add_index :records, [ :app_user_id, :created_at ]
   end
 end
+

@@ -10,3 +10,4 @@ class CreateAdministrators < ActiveRecord::Migration[6.0]
     add_index :administrators, :manager_number, unique: true
   end
 end
+
