@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # config = Rails.application.config.study_meter
 
-  constraints host: "study-meter.com" do
+  # constraints host: "study-meter.com" do
     namespace :user, path: "" do
       root "toppages#index"
       get "login" => "sessions#new", as: :login
@@ -22,5 +22,5 @@ Rails.application.routes.draw do
       end
       resources :records
     end
-  end
+  # end
 end
