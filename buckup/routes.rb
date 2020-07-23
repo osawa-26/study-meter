@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  # config = Rails.application.config.study_meter
+  config = Rails.application.config.study_meter
 
-  constraints host: "study-meter.com" do
-    namespace :user, path: "" do
+  constraints host: config[:user][:host] do
+    namespace :user, path: config[:user][:path] do
       root "toppages#index"
       get "login" => "sessions#new", as: :login
       # delete "records" => "records#destroy"
@@ -12,8 +12,10 @@ Rails.application.routes.draw do
       resource :password, only: [ :show, :edit, :update ]
       resources :records
     end
+  end
 
-    namespace :admin do
+  constraints host: config[:admin][:host] do
+    namespace :admin, path: config[:admin][:path] do
       root "top#index"
       get "login" => "sessions#new", as: :login
       resource :session, only: [ :create, :destroy ]
