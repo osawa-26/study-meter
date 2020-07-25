@@ -1,0 +1,15 @@
+@import "colors";
+@import "dimensions";
+@import "bootstrap";
+
+div#wrapper {
+  div#container {
+    div.mainPanel {
+  width: 50%;
+  margin: $very_wide * 2 auto;
+  padding: $wide * 2;
+  background-color: white;
+  border-top: solid 2px $orange;
+    }
+  }
+}

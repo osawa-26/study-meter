@@ -1,5 +1,6 @@
 <% @title = "パスワード変更" %>
 <h1><%= @title %></h1>
+<%= render 'layouts/flash_messages' %>
 
 <div id="generic-form">
   <%= form_with model: @change_password_form, url: :user_password,

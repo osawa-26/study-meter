@@ -2,7 +2,7 @@
 @import "dimensions";
 @import "bootstrap";
 
-div.table-wrapper {
+div.table-wrapper#account {
   width: 50%;
   margin: 0 auto;
 
@@ -13,18 +13,27 @@ div.table-wrapper {
 
   table {
     margin: $moderate auto 0;
-    border-top: solid 2px $orange;
+    border-top: solid 2px $dark_blue;
     tr {
       th {
         background-color: white;
       }
-      th, td { padding: $narrow }
-      td.email, td.date { font-family: monospace; }
+      th, td {
+        padding: $narrow;
+        text-align: left;
+       }
+      td.email, td.date {
+        font-family: monospace;
+        text-align: left;
+      }
     }
   }
   table.attributes {
     width: 100%;
     th { padding-right: $moderate; width: 200px; }
-    td { background-color: white; }
+    td {
+      background-color: white;
+      text-align: left;
+    }
   }
 }

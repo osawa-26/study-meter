@@ -1,4 +1,8 @@
-<div class="center jumbotron" style="background-color:  white;">
+<% @title = "トップページ" %>
+<h1><%= @title %></h1>
+<%= render 'layouts/flash_messages' %>
+
+<div class="mainPanel">
   <div class="text-center">
     <h2>こんにちは、<%= current_app_user.nickname %>さん</h2>
     <div class="my-4"><h3>今までの勉強時間</h3></div>

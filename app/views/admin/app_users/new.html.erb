@@ -1,5 +1,6 @@
 <% @title = "新規ユーザ登録" %>
 <h1><%= @title %></h1>
+<%= render 'layouts/flash_messages' %>
 
 <div id="generic-form">
   <%= form_with model: @app_user, url: [ :admin, @app_user ] do |f| %>

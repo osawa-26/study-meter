@@ -3,13 +3,9 @@
 @import "bootstrap";
 
 div.table-wrapper {
-  width: 90%;
-  margin: 0 auto;
-
-  div.links {
-    text-align: right;
-    padding: $moderate;
-  }
+  width: 80%;
+  margin: $very_wide * 2 auto;
+  padding: $wide * 2;
 
   th { text-align: center; }
   td.boolean { text-align: center; }

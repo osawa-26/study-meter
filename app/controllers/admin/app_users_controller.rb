@@ -4,13 +4,13 @@ class Admin::AppUsersController < Admin::Base
   end
 
   def show
-    app_user = AppUser.find(params[:id])
-    redirect_to [ :edit, :admin, app_user ]
+    @app_user = AppUser.find(params[:id])
+    # redirect_to [ :edit, :admin, app_user ]
   end
 
-  # def new
-  #   @app_user = AppUser.new
-  # end
+  def new
+    @app_user = AppUser.new
+  end
 
   def edit
     @app_user = AppUser.find(params[:id])

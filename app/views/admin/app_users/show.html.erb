@@ -1,10 +1,9 @@
-<% @title = "お客様アカウント情報" %>
+<% @title = "アカウント情報" %>
 <h1><%= @title %></h1>
 
-<div class="table-wrapper">
+<div class="table-wrapper" id="account">
   <div class="links">
-    <%= link_to "アカウント情報編集", :edit_user_account %> |
-    <%= link_to "パスワード変更", :edit_user_password %>
+    <%= link_to "アカウント情報編集", :edit_admin_app_user %>
   </div>
   <table class="attributes">
     <tr><th colspan="2">アカウント情報</th></tr>

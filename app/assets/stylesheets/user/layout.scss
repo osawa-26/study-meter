@@ -14,12 +14,6 @@ div#wrapper {
   margin: 0 auto;
   padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
   background-color: $floralwhite;
-
-  div.alert.alert-success div.alert.alert-danger {
-    padding: $narrow $moderate;
-    margin: 0 $moderate;
-    font-size: large;
-  }
 }
 header {
   padding: $moderate;

@@ -5,16 +5,15 @@
 div#wrapper {
   div#container {
     div#login-form {
-      width: 800px;
+      width: 480px;
       margin: $wide * 2 auto;
       padding: $wide * 2;
-      border-radius: $wide;
-      border: solid 4px $blue;
-      background-color: $light_gray;
+      border-top: solid 2px $orange;
+      background-color: white;
 
       h1 {
         background-color: transparent;
-        color: $blue;
+        color: $orange;
         font-size: $huge;
         font-weight: bold;
       }
@@ -32,6 +31,10 @@ div#wrapper {
           }
           input[type="submit"] {
             padding: $wide $wide * 2;
+            background-color: #0b86d9;
+            color: #FFFFFF;
+            border: 0;
+            border-radius: 5px;
           }
         }
       }

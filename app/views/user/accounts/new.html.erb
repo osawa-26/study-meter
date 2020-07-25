@@ -1,12 +1,18 @@
-<% @title = "アカウント編集" %>
+<% @title = "アカウント新規登録" %>
 <h1><%= @title %></h1>
 <%= render 'layouts/flash_messages' %>
 
 <div id="generic-form">
   <%= form_with model: @app_user, url: :user_account do |f| %>
     <%= render "form", f: f %>
+    <%= markup do |m|
+      p = AppUserFormPresenter.new(f, self)
+      p.with_options(required: true) do |q|
+        m << q.password_field_block(:password, "パスワード", size: 32)
+      end
+    end %>
     <div class="buttons">
-      <%= f.submit "更新" %>
+      <%= f.submit "登録" %>
       <%= link_to "キャンセル", :user_account %>
     </div>
   <% end %>

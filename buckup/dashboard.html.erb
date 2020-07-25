@@ -1,6 +1,8 @@
 <% @title = "ダッシュボード" %>
 <h1><%= @title %></h1>
 
+<%= render 'layouts/flash_messages' %>
+
 <ul class="menu">
   <li><%= link_to "利用者様一覧", :admin_app_users %></li>
   <li><%= link_to "利用者様の勉強の記録", :admin_records %></li>

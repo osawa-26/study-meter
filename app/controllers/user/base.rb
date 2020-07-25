@@ -14,7 +14,7 @@ class User::Base < ApplicationController
 
   private def authorize
     unless current_app_user
-      flash[:danger] = "職員としてログインしてください。"
+      # flash[:danger] = "ログインしてください。"
       redirect_to :user_login
     end
   end

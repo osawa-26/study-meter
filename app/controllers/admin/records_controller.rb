@@ -20,7 +20,7 @@ class Admin::RecordsController < Admin::Base
     @record.assign_attributes(record_params)
     if @record.save
       flash[:success] = '正常に入力されました'
-      redirect_to :admin_app_users
+      redirect_to admin_app_user_records_path(@record.app_user_id)
     else
       flash.now[:danger] = '正常に入力されませんでした'
       render action: "edit"
@@ -31,8 +31,7 @@ class Admin::RecordsController < Admin::Base
     record = Record.find(params[:id])
     record.destroy!
     flash[:success] = "削除されました"
-    # redirect_to :admin_app_users
-    redirect_to :admin_app_users
+    redirect_to admin_app_user_records_path(record.app_user_id)
   end
 
   private def record_params

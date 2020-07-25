@@ -2,5 +2,19 @@
 @import "dimensions";
 @import "bootstrap";
 
-header{
+div#wrapper {
+  div#container {
+    div.alert-success {
+      width: 480px;
+      margin: $wide * 2 auto;
+      padding: $wide * 2;
+      text-align: center;
+    }
+    div.alert-danger {
+      width: 480px;
+      margin: $wide * 2 auto;
+      padding: $wide * 2;
+      text-align: center;
+    }
+  }
 }

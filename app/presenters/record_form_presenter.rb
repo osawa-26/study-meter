@@ -3,7 +3,9 @@ class RecordFormPresenter < FormPresenter
     markup(:div, class: "input-block") do |m|
       m << decorated_label(name1, label_text, options)
       m << form_builder.select(name1, choices1, { include_blank: true }, options)
+      m.span " 時間 "
       m << form_builder.select(name2, choices2, { include_blank: true }, options)
+      m.span " 分 "
       m << error_messages_for(name1)
       m << error_messages_for(name2)
     end

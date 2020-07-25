@@ -1,5 +1,6 @@
 <% @title = "勉強の記録の編集" %>
 <h1><%= @title %></h1>
+<%= render 'layouts/flash_messages' %>
 
 <div id="generic-form">
   <%= form_with model: @record, url: [ :admin, @record ] do |f| %>

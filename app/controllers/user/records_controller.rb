@@ -35,7 +35,7 @@ class User::RecordsController < User::Base
     @record.assign_attributes(record_params)
     if @record.save
       flash[:success] = '正常に入力されました'
-      redirect_to :user_records_url
+      redirect_to :user_records
     else
       flash.now[:danger] = '正常に入力されませんでした'
       render action: "edit"

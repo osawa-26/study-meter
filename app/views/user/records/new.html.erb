@@ -1,5 +1,6 @@
 <% @title = "新しい投稿" %>
 <h1><%= @title %></h1>
+<%= render 'layouts/flash_messages' %>
 
 <div id="generic-form">
   <%= form_with model: @record, url: [ :user, @record ] do |f| %>
