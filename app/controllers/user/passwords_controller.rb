@@ -12,10 +12,10 @@ class User::PasswordsController < User::Base
     @change_password_form = User::ChangePasswordForm.new(app_user_params)
     @change_password_form.object = current_app_user
     if @change_password_form.save
-      flash.notice = "パスワードを変更しました。"
+      flash[:success] = "パスワードを変更しました。"
       redirect_to :user_account
     else
-      flash.now.alert = "入力に誤りがあります。"
+      flash[:danger] = "入力に誤りがあります。"
       render action: "edit"
     end
   end
